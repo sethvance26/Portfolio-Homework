@@ -55,10 +55,6 @@ nav ul {
   font-size: x-large;
 }
 
-.container {
-  padding: 5px;
-}
-
 .contact-info {
   text-align: center;
   width: 100%;
@@ -68,7 +64,7 @@ nav ul {
   text-align:left;
   
 }
-/*  */
+/* Here I created the above classes to make sure the contact info header stayed to the left, and the links stayed more to  */
 
 .email, .linkedin, .github, .spotify{
   display:inline-block;
@@ -120,15 +116,8 @@ article p {
     border: 5px solid var(--light);
     
 }
-/* Here I made a class pers-img */
+/* Here I made a class pers-img to ensure my image wasn't too big or too small */
 
-/* article ul {
-  margin-left: 5%;
-  font-size: 110%;
-  list-style: circle;
-  flex-direction: column;
-  display:inline-block; */
-}
 
 
 @media screen and (max-width: 768px) {
