@@ -86,7 +86,7 @@ main {
 }
 
 article {
-  border-left: 1px solid var(--dark);
+  border-left: 6px solid var(--dark);
   margin-left: 200px;
 }
 /* Here I changed the margin-left to 200px, causing everything under h2 to move to the right */
