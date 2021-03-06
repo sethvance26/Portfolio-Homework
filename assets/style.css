@@ -1,6 +1,5 @@
-/* create custom CSS variables (also called custom properties) and apply them to the root of the page, making them accessible to all other CSS */
+/* Here I made a custom property to apply colors to multiple items */
 :root {
-  /* declare a variable with `--` syntax */
   --dark: #13293d;
   --light: #fff;
   --navlink-color: #b9c6ae;
@@ -14,11 +13,9 @@ body {
 }
 
 header {
-  
   justify-content: space-between;
   display: flex;
   padding: 1%;
-  /* use CSS var() function to reference a variable created above */
   background-color: var(--dark);
   font-family: cursive;
 }
@@ -38,14 +35,7 @@ h2 {
   text-decoration: underline;
   font-family: cursive;
 }
-/* Under h2, we under-lined the text, and also made it cursive. */
-
-
-/* a[href*='.css']::after {
-  content: '📝';
-  display: inline-block;
-  margin-left: 3px;
-} */
+/* Under h2, I under-lined the text, and also made it cursive. */
 
 nav ul {
   display: flex;
@@ -55,7 +45,7 @@ nav ul {
   font-size: x-large;
   background-color: var(--dark);
 }
-
+/* This above is for the list items in the header */
 .contact-info {
   text-align: center;
   width: 100%;
@@ -83,8 +73,6 @@ nav a {
   font-weight: bold;
   text-decoration: none;
 }
-
-
 
 nav a:hover {
   color: var(--light);
@@ -120,9 +108,7 @@ article p {
     image-resolution:inherit;
     margin-left: 20px;
     border: 5px solid var(--light);
-    -webkit-transtion:opacity 0.5s;
-    
-    
+    flex-wrap: wrap;
 }
 /* above I made a class called pers-img to ensure my personal image had decent height 
 and width (so it wasn't blurry) */
@@ -139,16 +125,14 @@ and width (so it wasn't blurry) */
   border-style: solid;
   border-width: 1px;
   border-radius: 50px;
-  padding: 10px;
   flex: 0 0 200px;
   box-shadow: 10px 10px 5px #aaaaaa;
   margin: 20px;
 }
-
+/* Here I created the card class for the images within the portfolio section */
 .sites {
   flex: 5;
   padding: 50px;
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: flex-start;
@@ -157,7 +141,6 @@ and width (so it wasn't blurry) */
 
 
 .big-img {
-  padding: 10px;
   height:100%;
   width: 80%;
   margin-left: 20px;
@@ -181,22 +164,24 @@ and width (so it wasn't blurry) */
   header {
     flex-direction: column;
   }
-
-  main {
+  .snip-img {
+    height: 350px;
+    width: 350px;
+  }
+  .big-img {
+    height: 350px;
+    width: 350px;
+  }
+    main {
     max-width:1200px;
   }
 }
 
 @media screen and (max-width: 375px) {
-
-  /*~~~~~~~~~~~~~~~~~~~~*/
-  /*      <header>      */
-  /*~~~~~~~~~~~~~~~~~~~~*/
   header {
     flex-direction: column;
   }
- 
+}
 
-  nav a:hover {
-      font-size: 35px;
-  }
+/* Above we made media queries in order to make certain breakpoints */
+/* We also made the image change height and width when the page changes */
