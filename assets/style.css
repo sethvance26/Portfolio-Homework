@@ -10,7 +10,7 @@ body {
   
   flex-direction: column;
   line-height: 1.3;
-  background-color:#5F9EA0;
+  background-color:#BBBCC2
 }
 
 header {
@@ -53,6 +53,7 @@ nav ul {
   justify-content: space-between;
   min-width: 500px;
   font-size: x-large;
+  background-color: var(--dark);
 }
 
 .contact-info {
@@ -104,11 +105,12 @@ article {
 
 
 article p {
-  margin-left: 20px;
+  margin-left: 70px;
   font-size: 110%;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: var(--light);
+  font-family: cursive;
+  color: black;
   line-height:26px;
+  padding: 05px;
   
 }
 
@@ -130,13 +132,7 @@ and width (so it wasn't blurry) */
   width: 40%;
   margin: auto;
   border: 5px solid var(--light);
-}
-
-.web-img {
-  height:60%;
-  width: 40%;
-  margin: auto;
-  border: 5px solid var(--light);
+  
 }
 
 .card {
@@ -166,16 +162,41 @@ and width (so it wasn't blurry) */
   width: 80%;
   margin-left: 20px;
   border: 5px solid var(--light);
+  flex-wrap: wrap;
 }
 /* Here the biggest image is styled with the class big-img */
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 848px) {
   header {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   main {
     max-width: 1200px;
   }
 }
+
+@media screen and (max-width: 676px) {
+  header {
+    flex-direction: column;
+  }
+
+  main {
+    max-width:1200px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  /*~~~~~~~~~~~~~~~~~~~~*/
+  /*      <header>      */
+  /*~~~~~~~~~~~~~~~~~~~~*/
+  header {
+    flex-direction: column;
+  }
+ 
+
+  nav a:hover {
+      font-size: 35px;
+  }
