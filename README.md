@@ -5,7 +5,7 @@
 This week, we were tasked with creating an responsive webpage with samples of a 'potential employee's portfolio included. We were also asked to include a name, a recent photo, links to sections about them, and contact information.
 
 Since our task acceptance criteria included a layout that responds on various screens and devices, we had to add 
-media queries to make certain breakpoints on our page. This was done to ensure everything looked decent even on smaller devices or aspect ratios. 
+media queries to make certain breakpoints on our page. Flexbox was also applied on the images as well as text. This was done to ensure everything looked decent even on smaller devices or aspect ratios. 
 
 We also had to style each image to be within a margin, and give each image a class to ensure they looked decent on the page and easy on the eyes.
 
